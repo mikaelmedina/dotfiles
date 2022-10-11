@@ -1,0 +1,17 @@
+URxvt.font:          xft:monospace:size=13
+URxvt.scrollBar:     false
+URxvt.transparent:   true
+URxvt.shading:       40
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+! handle Meta (Alt) + keypress to set the 8th bit
+URxvt.meta8: true
+
+! Ctrl+Shift+(C/V)
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false

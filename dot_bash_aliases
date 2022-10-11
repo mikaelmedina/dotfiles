@@ -1,0 +1,27 @@
+alias r2='source /opt/ros/humble/setup.bash'
+alias rgz='source ~/Documents/ntnu/project/ros_gz/install/setup.bash'
+alias cn='clear && neofetch'
+alias imgur='$HOME/.config/custom-scripts/imgur'
+alias pizza='ssh mikael@mikaelmedina.no'
+alias pwu='pwd | urxvtc'
+alias d2p='lowriter --convert-to pdf'
+alias ntnu='cd ~/Documents/ntnu'
+alias notes='cd ~/Documents/ntnu/fall_notes'
+
+zath() {
+    nohup zathura "$1" > ~/.nohup.out 2>&1 &
+}
+
+# Write content of a file to the clipboard
+cclip() {
+    cat "$1" | xclip -sel clipboard;
+}
+
+# Useful commands:
+# grip .md - Preview markdown
+ga() {
+   if [ ! -e ~/.ssh/config ]; then
+      echo "AddKeysToAgent yes" >> ~/.ssh/config
+   fi
+   eval "$(ssh-agent -s -t 10800)"
+}

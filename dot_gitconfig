@@ -1,0 +1,7 @@
+[user]
+	name = Mikael Medina
+	email = mikael.medina+github@hotmail.com
+[alias]
+	lg = log --all --oneline --graph --decorate
+[pull]
+	rebase = false
