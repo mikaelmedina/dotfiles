@@ -5,3 +5,5 @@
 	lg = log --all --oneline --graph --decorate
 [pull]
 	rebase = false
+[credential "https://git.overleaf.com"]
+    username = mikaelam@stud.ntnu.no
